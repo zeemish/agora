@@ -50,7 +50,7 @@ const generateRTCToken = (req, resp) => {
   // get the expire time
   let expireTime = req.query.expiry;
   if (!expireTime || expireTime === "") {
-    expireTime = 3600;
+    expireTime = 259200;
   } else {
     expireTime = parseInt(expireTime, 10);
   }
@@ -98,7 +98,7 @@ const generateRTMToken = (req, resp) => {
   // get the expire time
   let expireTime = req.query.expiry;
   if (!expireTime || expireTime === "") {
-    expireTime = 3600;
+    expireTime = 259200;
   } else {
     expireTime = parseInt(expireTime, 10);
   }
@@ -143,7 +143,7 @@ const generateRTEToken = (req, resp) => {
   // get the expire time
   let expireTime = req.query.expiry;
   if (!expireTime || expireTime === "") {
-    expireTime = 3600;
+    expireTime = 259200;
   } else {
     expireTime = parseInt(expireTime, 10);
   }
